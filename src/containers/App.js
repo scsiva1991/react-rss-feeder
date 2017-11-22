@@ -17,22 +17,33 @@ export default class App extends Component {
             records.push({
                 name: 'List '+i
             });
-
-            if( i % 2 == 0 ) {
-                feeds.push({
-                    title: 'title ' + i,
-                    content: 'i iiii ',
-                    img: 'http://via.placeholder.com/350x150'
-                })
-            } else {
-                feeds.push({
-                    title: 'title ' + i,
-                    content: 'i iiii ',
-                    img: ''
-                })
-            }
-
         }
+
+        feeds = [
+            {
+               "title":"An article",
+               "link":"http://www.example.com/an-article",
+               "content":"Some sample text here",
+               "pubDate":"2008-10-27 11:06 EST",
+               "author":"example author",
+               "img": 'https://source.unsplash.com/random'
+           },
+           {
+               "title":"Second",
+               "link":"http://www.example.com/Seond",
+               "content":"Some sample text here",
+               "pubDate":"2008-10-25 23:20 EST",
+               "img":"",
+           },
+           {
+               "title":"third article",
+               "link":"http://www.example.com/third-article",
+               "content":"Some sample text here",
+               "pubDate":"2008-10-25 23:18 EST",
+               "author":"some other author",
+               "img": 'https://source.unsplash.com/random'
+           }
+        ]
 
         return(
             <div className="container-fluid">
